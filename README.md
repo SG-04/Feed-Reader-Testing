@@ -24,13 +24,10 @@ New Feed Selection:
 ## How to run the Project
 - Clone the repository using `git clone https://github.com/SG-04/Feed-Reader-Testing.git`
 - Open index.html in your browser.
-- Alternatively, you can view the site on github pages by using the link below.
 ## Technologies Used
 - Jasmine
 - jQuery
 - HTML5/CSS3
 
-To view the feedreader testing site on github pages go to http://SG-04.github.io/Feed-Reader-Testing
-` 
 
 
