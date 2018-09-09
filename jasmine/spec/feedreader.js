@@ -102,4 +102,18 @@ describe('Initial Entries', function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+describe('New Feed Selection', function(){
+    var testfeed;
+    // when a new feed is loaded by the loadFeed function that the content actually changes
+    beforeEach(function(done) {
+        loadFeed(0, function() {
+                    testfeed = $('.feed').html();
+                    loadFeed(1, done);
+        });
+    });
+   // Check the newsfeed  html to be not same as previous.
+        it('has been loaded', function(){
+        expect($('.feed').html()).not.toEqual(testfeed);
+        });
+});
 }());
