@@ -59,7 +59,7 @@ $(function() {
          */
 describe('menu',function(){
     it('hidden menu',function(){
-        expect($('.menu-hidden').is(':visible')).toBe(true);
+        expect($('body').hasClass('menu-hidden')).toBe(true); 
     });
          /* Test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
@@ -68,11 +68,11 @@ describe('menu',function(){
           */
     it('menu visible on click',function(){
         $('a.menu-icon-link').trigger('click');
-        expect($('.menu-hidden').is(':visible')).toBe(false);
+        expect($('body').hasClass('menu-hidden')).toBe(false); 
     });
     it('hidden by clicking again ', function () {
         $('a.menu-icon-link').trigger('click');
-        expect($('.menu-hidden').is(':visible')).toBe(true);
+        expect($('body').hasClass('menu-hidden')).toBe(true); 
     });
 });
 
